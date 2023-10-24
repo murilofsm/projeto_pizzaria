@@ -30,6 +30,8 @@ class AuthUserService {
       throw new Error("User/password incorrect");
     }
 
+
+    // se deu tudo certo gerar o token para o usuário
     const token = sign(
       {
         name: user.name,
